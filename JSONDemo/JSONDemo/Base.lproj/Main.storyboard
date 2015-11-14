@@ -57,12 +57,33 @@
                                     <action selector="queryAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vaX-m3-e1c"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X7t-mO-np5">
+                                <rect key="frame" x="16" y="424" width="343" height="216"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q1B-bn-QO5">
+                                <rect key="frame" x="16" y="386" width="150" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dWy-XN-dfu">
+                                <rect key="frame" x="209" y="386" width="150" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="companyShow" destination="q1B-bn-QO5" id="Z9P-GV-PPB"/>
                         <outlet property="companyTextField" destination="E5Q-wx-PSJ" id="sSk-wP-9VX"/>
+                        <outlet property="textView" destination="X7t-mO-np5" id="lNc-pw-pft"/>
+                        <outlet property="waybillShow" destination="dWy-XN-dfu" id="A8n-Ug-xtP"/>
                         <outlet property="waybillTextField" destination="9b8-MI-7G9" id="m8L-RJ-Uvy"/>
                     </connections>
                 </viewController>
